@@ -3,7 +3,7 @@
 	"id": "keepwalking",
 	"version": "${version}",
 	"name": "KeepWalking",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "No dark inventory overlay – and maybe more. Keep walking, keep coding!",
 	"authors": [
 		"Me!"
 	],
@@ -14,6 +14,7 @@
 	"license": "CC0-1.0",
 	"icon": "assets/keepwalking/icon.png",
 	"environment": "*",
+
 	"entrypoints": {
 		"main": [
 			"ser.keepwalking.KeepWalking"
@@ -22,6 +23,7 @@
 			"ser.keepwalking.KeepWalkingClient"
 		]
 	},
+
 	"mixins": [
 		"keepwalking.mixins.json",
 		{
@@ -29,13 +31,17 @@
 			"environment": "client"
 		}
 	],
+
+	"custom": {
+		"fabric-resource-loader:register": [
+			"minecraft"
+		]
+	},
+
 	"depends": {
 		"fabricloader": ">=0.16.14",
 		"minecraft": "~1.21.5",
 		"java": ">=21",
 		"fabric-api": "*"
-	},
-	"suggests": {
-		"another-mod": "*"
 	}
 }
