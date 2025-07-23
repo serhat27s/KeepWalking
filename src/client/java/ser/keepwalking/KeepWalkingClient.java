@@ -27,7 +27,7 @@ public class KeepWalkingClient implements ClientModInitializer {
 				client.options.leftKey,
 				client.options.rightKey,
 				client.options.jumpKey,
-				client.options.sprintKey // if not using minecraft's built-in toggle sprint
+				client.options.sprintKey // redundant if using minecraft's built-in toggle sprint
 				//client.options.sneakKey | not working well with the default keybind of sneaking (lshift)
 		};
 
