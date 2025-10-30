@@ -1,4 +1,4 @@
-package ser.keepwalking;
+package sx.keepwalking;
 
 import net.fabricmc.api.ModInitializer;
 

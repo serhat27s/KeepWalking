@@ -1,29 +1,26 @@
 {
 	"schemaVersion": 1,
 	"id": "keepwalking",
-	"version": "${version}",
+	"version": "${2.0}",
 	"name": "KeepWalking",
-	"description": "No dark inventory overlay – and maybe more. Keep walking, keep coding!",
+	"description": "A mod that allows you to walk while having a GUI open.",
 	"authors": [
-		"Me!"
+		"serhat27s"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/serhat27s/KeepWalking"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/keepwalking/icon.png",
 	"environment": "*",
-
 	"entrypoints": {
 		"main": [
-			"ser.keepwalking.KeepWalking"
+			"sx.keepwalking.KeepWalking"
 		],
-		"client": [
-			"ser.keepwalking.KeepWalkingClient"
-		]
+  "modmenu": [
+    "sx.keepwalking.ModMenuIntegration"
+  ]
 	},
-
 	"mixins": [
 		"keepwalking.mixins.json",
 		{
@@ -31,17 +28,15 @@
 			"environment": "client"
 		}
 	],
-
-	"custom": {
-		"fabric-resource-loader:register": [
-			"minecraft"
-		]
-	},
-
 	"depends": {
-		"fabricloader": ">=0.16.14",
-		"minecraft": "~1.21.5",
+		"fabricloader": ">=0.17.3",
+      "cloth-config2": ">=20.0.149",
+      "modmenu": ">=16.0.0-rc.1",
+		"minecraft": "~1.21.10",
 		"java": ">=21",
 		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
 	}
 }
