@@ -1,9 +1,12 @@
 {
 	"required": true,
-	"package": "ser.keepwalking.mixin.client",
+	"package": "sx.keepwalking.mixin.client",
 	"compatibilityLevel": "JAVA_21",
 	"client": [
-		"ExampleClientMixin"
+        "RemoveDimMixin",
+        "KeyBindingMixin",
+        "MinecraftClientMixin",
+        "ClientPlayerEntityMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
